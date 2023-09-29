@@ -2,6 +2,6 @@ package application.model;
 
 import org.springframework.data.repository.CrudRepository;
 
-public interface PlataformaRepository extends CrudRepository<Plataforma, Integer> {
+public interface JogosRepository extends CrudRepository<Jogos, Integer> {
     
 }

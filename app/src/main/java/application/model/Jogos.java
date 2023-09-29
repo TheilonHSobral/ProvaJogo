@@ -7,13 +7,12 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "platatformas")
-public class Plataforma {
+@Table(name = "Jogos")
+public class Jogos {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private String nome;
-    private String fornecedor;
+    private String titulo;
 
     public int getId() {
         return id;
@@ -21,16 +20,11 @@ public class Plataforma {
     public void setId(int id) {
         this.id = id;
     }
-    public String getNome() {
-        return nome;
+
+    public String getTitulo() {
+        return titulo;
     }
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-    public String getFornecedor() {
-        return fornecedor;
-    }
-    public void setFornecedor(String fornecedor) {
-        this.fornecedor = fornecedor;
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
     }
 }
